@@ -5,10 +5,16 @@ import 'package:flutter/material.dart';
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
     required this.title,
+    required this.firsticon,
+    required this.secondicon,
+    this.showBackButton = false,
     super.key,
   });
 
   final String title;
+  final IconData firsticon;
+  final IconData secondicon;
+  final bool showBackButton;
 
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
@@ -16,6 +22,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      leading: showBackButton? Icon(Icons.arrow_circle_left_outlined) : null,
       title: const Text(
         style: TextStyle(
           fontFamily: "DMSans",

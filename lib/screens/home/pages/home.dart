@@ -8,7 +8,11 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: "Mega shop",),
+      appBar: CustomAppBar(
+          title: "Mega shop",
+          firsticon: CupertinoIcons.bell,
+          secondicon: CupertinoIcons.cart,
+          showBackButton: true,),
       body: Column(),
     );
   }
