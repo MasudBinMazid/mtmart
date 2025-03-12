@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mtmart/screens/home/widgets/customappbar.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -7,23 +8,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          style: TextStyle(
-            fontFamily: "DMSans",
-            fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 68, 108, 229),
-          ),
-          'Mega Shop',
-        ),
-        actions: [
-          Icon(CupertinoIcons.bell),
-          const SizedBox(width: 20),
-          Icon(CupertinoIcons.cart),
-          const SizedBox(width: 20),
-        ],
-        centerTitle: true,
-      ),
+      appBar: CustomAppBar(title: "Mega shop",),
       body: Column(),
     );
   }
