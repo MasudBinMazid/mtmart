@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:mtmart/screens/home/pages/home.dart';
 
 void main() {
   runApp(const MyWidget());
 }
-
 
 class MyWidget extends StatefulWidget {
   const MyWidget({super.key});
@@ -15,6 +15,8 @@ class MyWidget extends StatefulWidget {
 class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: Home(),
+    );
   }
 }
