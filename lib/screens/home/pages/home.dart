@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -11,13 +12,19 @@ class Home extends StatelessWidget {
           style: TextStyle(
             fontFamily: "DMSans",
             fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 68, 108, 229),),
-           'Mega Shop',  
+            color: Color.fromARGB(255, 68, 108, 229),
           ),
+          'Mega Shop',
+        ),
+        actions: [
+          Icon(CupertinoIcons.bell),
+          const SizedBox(width: 20),
+          Icon(CupertinoIcons.cart),
+          const SizedBox(width: 20),
+        ],
+        centerTitle: true,
       ),
-      body: const Center(
-        child: Text('Home Page'),
-      ),
+      body: Column(),
     );
   }
 }
