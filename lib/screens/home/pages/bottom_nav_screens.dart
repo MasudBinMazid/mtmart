@@ -38,15 +38,15 @@ class _BottomNavScreensState extends State<BottomNavScreens> {
         selectedItemColor: Colors.black, // Changed to black
         unselectedItemColor: Colors.black, // Added this line
         items: [
-          BottomNavigationBarItem(icon: Icon(Iconsax.home), label: ""),
-          BottomNavigationBarItem(icon: Icon(Iconsax.heart), label: ""),
+          BottomNavigationBarItem(icon: Icon(Iconsax.home), label: "HOME"),
+          BottomNavigationBarItem(icon: Icon(Iconsax.heart), label: "WISHLIST"),
           BottomNavigationBarItem(
             icon: Icon(Iconsax.shopping_bag),
-            label: "",
+            label: "ORDER",
           ),
           BottomNavigationBarItem(
             icon: Icon(Iconsax.profile_2user),
-            label: "",
+            label: "ACCOUNT",
           ),
         ],
       ),
