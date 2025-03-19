@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mtmart/screens/home/pages/bottom_nav_screens.dart';
 import 'package:mtmart/screens/home/pages/home.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class _MyWidgetState extends State<MyWidget> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: BottomNavScreens(),
     );
   }
 }
